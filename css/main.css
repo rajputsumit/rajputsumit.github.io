@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 .navbar {
   background: #05386b;
 }
@@ -9,7 +11,8 @@
 }
 
 .navbar-brand {
-  padding: 5px 10px;
+  padding: 0px 5px;
+  font-family: 'Lato';
 }
 
 .navbar-brand:hover {
@@ -59,8 +62,8 @@
 }
 
 .description h2 {
-  color: #5cdb95;
-  text-shadow: 1px 1px 2.5px #222;
+  color: #05386b;
+  text-shadow: 1px 1px 2.5px #c5c5c5;
   font-size: 38px;
   font-weight: 900;
 }
@@ -94,7 +97,7 @@
 }
 
 .about h1 {
-  color: #f97300;
+  color: #05386b;
   margin: 2rem;
 }
 
@@ -114,11 +117,11 @@
 
 .about .desc {
   padding: 2em;
-  border-left: 4px solid #10828c;
+  border-left: 4px solid #05386b;
 }
 
 .about .desc h3 {
-  color: #10828c;
+  color: #05386b;
 }
 
 .about .desc p {
@@ -157,4 +160,23 @@
 .contact-form .right .form-control::placeholder {
   color: #888;
   font-size: 16px;
+}
+
+/*Portfolio*/
+.portfolio {
+  margin: 4em 0;
+  position: relative;
+}
+
+.portfolio h1 {
+  color: #05386b;
+  margin: 2em;
+}
+
+.portfolio img {
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+  border: 1px solid #555;
+  border-radius: 10px;
 }
