@@ -1,0 +1,42 @@
+[
+    {
+        "quote":"At the end of the day, my goal was to be the best hacker.", 
+        "author":"Kevin Mitnick"
+    },
+    {
+        "quote":"The hacker mindset doesn't actually see what happens on the other side, to the victim.",
+        "author":"Kevin Mitnick"
+    },
+    {
+        "quote":"I'm a hacker, but I'm the good kind of hackers. And I've never been a criminal.",
+        "author":"Mikko Hypponen"
+    },
+    {
+        "quote":"If a listener nods his head when you're explaining your program, wake him up.",
+        "author":"Alan J. Perlis"
+    },
+    {
+        "quote":"If you want to confuse your enemies, give them the source code. If you want to really confuse them, give them the documentation.",
+        "author":"Anonymous"
+    },
+    {
+        "quote":"A computer is a stupid machine with the ability to do incredibly smart things, while computer programmers are smart people with the ability to do incredibly stupid things. They are, in short, a perfect match.",
+        "author":"Bill Bryson"
+    },
+    {
+        "quote":"Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.",
+        "author":"Alan J. Perlis"
+    },
+    {
+        "quote":"In software, the most beautiful code, the most beautiful functions, and the most beautiful programs are sometimes not there at all.",
+        "author":"Jon Bentley"
+    },
+    {
+        "quote":"Good programmers know what to write. Great ones know what to rewrite (and reuse).",
+        "author":"Eric Raymond"
+    },
+    {
+        "quote":"It’s hardware that makes a machine fast. It’s software that makes a fast machine slow.",
+        "author":"Craig Bruce"
+    }
+]

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body,html {
+	height:100%;
+}
+body {
+	color:#c5c5c5;
+	width:100%;
+	background: #262626;
+	text-align: center;
+	display: block;
+}
+#big_wrap {
+	color: white;
+    border: 1px solid black;
+    width: 1000px;
+    margin: 20px auto;
+    text-align: left;
+	background: #9ad3de;
+}
+header {
+	background-color: #e3e3e3;
+	color: white;
+	padding: 20px;
+	height:300px;
+	background-image: url("https://images5.alphacoders.com/695/695931.jpg");
+	/* border-bottom:2px solid white; */
+	/* border-top:2px solid white; */
+}
+#nav ul {
+	padding:5px 10px;
+    list-style-type: none;
+    background: #606060;
+	border-top: 0.5px solid black;
+}
+#nav ul li {
+    display: inline;
+	margin-right:10px;
+}
+#nav ul li a {
+	color: #c5c5c5;
+	text-decoration: none;
+}
+#content {
+	font-size:15px;
+	font-family: Times New Roman;
+	background:white;
+}
+footer {
+	border-top: 2px solid black;
+	margin:20px;
+	padding:10px 20px;
+	clear: both;
+}
+#new_input {
+	height:200px;
+	width:300px;
+}
+#content p {
+	margin-left:5px;
+	font-size:15px;
+	font-family: Lobster;
+}
+.works {
+	border:2px solid darkgrey;
+	width:100%;
+	height:350px;
+	margin-bottom:10px;
+}
+#shadow {
+    box-shadow: 10px 10px 10px #888888;
+}
+footer a {
+	color: black;
+	text-decoration:none;
+	font-family:Helvetica, serif;
+	font-size: 20px;
+	transition-duration:0.7s;
+}
+footer a:hover {
+	color:#888888;
+	text-decoration:none;
+}
+footer a:visited {
+	color:brown;
+}
+footer a:clicked {
+	color: white;
+}
+.works {
+	transition-duration:0.5s;
+}
+.works:hover {
+	height: ;
+	width: ;
+	box-shadow:5px 5px 5px #888888;
+}
+.fa {
+	font-size:20px;
+	border-radius:999px;
+	padding:10px;
+	border:1px solid #c5c5c5;
+}
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+p {
+	font-size:25px;
+	font-family:Helvetica;
+	float:left;
+}
+.para {
+	font-family:Lobster;
+	text-align:center;
+}
+form p {
+	font-family:Lato;
+}
+.hero-image {
+	background-image: url ("https://images5.alphacoders.com/695/695931.jpg");
+	height:100%;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left:50%;
+	top:50%;
+	bottom
+	color: white;
+	font-family: Forte;
+	font-size:30px;
+}
+.fa {
+	text-align:center;
+	height:50%;
+	transition: all 0.4s ease-in-out;
+}
+.fa:hover {
+	color:black;
+	background:white;
+	transform: scale(1.2);
+}
+.btn {
+	transition: all 0.4s;
+}
+.btn:hover {
+	transform: scale(1.2);
+}

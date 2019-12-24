@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+* {
+    padding: 0px;
+    margin: 0px;
+	box-sizing:border-box;
+}
+html,body {
+    height: 100%;
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/b6/2f/75/b62f7558388108f3210b66201e6a24c4.jpg") center center fixed;
+    background-size: cover;
+}
+#weather_info > div {
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    height: 5em;
+    width: 8em;
+    padding: 1em 1.5em;
+    border-radius: 40px;
+    font-size: 2em;
+    color: coral;
+    font-family: 'Bree Serif',cursive;
+}
+#weather_info {
+	display:flex-inline;
+	flex-flow:row wrap;
+/* 	top:25%; */
+/* 	position:relative; */
+	justify-content:space-around;
+	align-content:center;
+}
+.col-md-3 {
+	margin-top: 15%;
+}
+footer {
+    margin-bottom: 0px;
+    clear: both;
+    padding: .5em 1.5em;
+    color:lightgray;
+    text-align: left;
+    background: rgba(120,120,120,0.7);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 1.05em;
+}
+footer h1{
+    font-size: 1.5em;
+    font-family: 'Lato', serif;    
+}

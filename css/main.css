@@ -90,7 +90,8 @@ body {
 }
 
 .about {
-  margin: 4em 0;
+  top: 6em;
+  /* margin: 4em 0; */
   padding: 1em;
   position: relative;
 }
@@ -179,4 +180,15 @@ body {
   margin: 1em;
   border: 1px solid #555;
   border-radius: 10px;
+}
+
+.social-icons i{
+  font-size: 2em;
+  margin: 0 0.5em;
+  color:#333;
+  transition-duration: 0.5s;
+}
+.social-icons i:hover {
+  transform: scale(1.25);
+  color: black;
 }
