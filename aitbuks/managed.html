@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <title>Concordus Applications</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      position: relative;
+      overflow-x: hidden;
+      background: #f1f2f6;
+    }
+
+    body * {
+      font-family: "Rubik", sans-serif;
+    }
+
+    .main-left-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .main-left-col>div {
+      padding: 64px 0 0 100px;
+    }
+
+    .main-left-col h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .main-left-col h1 .tdyellow {
+      font-weight: 700;
+    }
+
+    .main-desc {
+      font-size: 20px;
+      color: #f1f1f1;
+      letter-spacing: .5px;
+      line-height: 1.5;
+    }
+
+    .Work-process .para1 {
+      width: 600px;
+      margin: 32px auto 0;
+    }
+
+    .vision-cards {
+      display: flex;
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    .vision-card {
+      flex: 1;
+      background: #2F3A5B;
+      border-radius: 4px;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+      padding: 32px;
+      font-size: 18px;
+      margin: 0 16px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s ease;
+    }
+
+    .vision-card:hover {
+      transform: scale(1.1);
+      color: #FFC84A;
+      font-weight: bold;
+    }
+
+    .leadership {
+      margin-top: 150px;
+    }
+
+    .team-cards {
+      display: flex;
+      margin-top: 100px;
+    }
+
+    .team-card {
+      box-shadow: 12px 12px 40px rgba(121, 121, 121, 0.3);
+      border-radius: 4px;
+      margin: 0 16px;
+      padding: 16px 32px;
+    }
+
+    .team-card img:first-child {
+      width: 100%;
+      height: 100px;
+      margin-top: -70px;
+      object-fit: contain;
+      margin-bottom: 16px;
+    }
+
+    .team-card .icon img {
+      margin-top: 8px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .hover-card {
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.25);
+      margin: -50px auto 0;
+      position: relative;
+      z-index: 99;
+      width: 90%;
+    }
+
+    .hover-card .col-4 {
+      padding: 64px 32px;
+    }
+
+    .hover-card img {
+      width: 54px;
+      height: 54px;
+      background-color: rgba(31, 219, 132, 0.1);
+      padding: 12px;
+      object-fit: contain;
+    }
+
+    .hover-card h4 {
+      font-size: 16px;
+      margin: 24px 0;
+      color: #031D5B;
+      font-weight: 700;
+    }
+
+    .hover-card .bar {
+      width: 60px;
+      height: 4px;
+      background: #FFC84A;
+      margin: 24px 0;
+    }
+
+    .hover-card p {
+      color: #666;
+      font-size: 14px;
+      color: #5B6C94;
+    }
+
+    .features {
+      margin: 100px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+    }
+
+    .feature-card {
+      background: white;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+      margin: 0 48px;
+      padding: 32px;
+      border-radius: 4px;
+      text-align: center;
+      width: 400px;
+      transition: all .2s ease;
+    }
+
+    .feature-card img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .feature-card h4 {
+      font-size: 24px;
+      margin: 32px 0;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.2);
+    }
+
+    .pricing {
+      text-align: center;
+    }
+
+    .pricing h2 {
+      font-size: 28px;
+    }
+
+    .pricing .toggle {
+      margin: 32px 0;
+    }
+
+    .pricing .toggle button {
+      padding: 12px 32px;
+      font-size: 14px;
+      background: white;
+      border: none;
+      color: #232323;
+    }
+
+    .pricing .toggle button:last-child {
+      background: #F1FFF8;
+    }
+
+    .pricing-cards {
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      margin: 0 32px;
+      padding: 32px;
+      flex: 1;
+    }
+
+    .pricing-card h4 {
+      font-size: 18px;
+    }
+
+    .pricing-card .price {
+      font-size: 48px;
+      color: #1FDB84;
+    }
+
+    .pricing-card p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .pricing-card.highlighted {
+      background: white;
+      border-top: 2px solid #0A8AFF;
+    }
+
+    .purchase {
+      padding: 12px 48px;
+      color: white;
+      background: #FFC84A;
+      font-weight: 600;
+      border: none;
+    }
+
+    .section-clients {
+      background: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar starts -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-masthead">
+    <div class="container-fluid inline-photo1 show-on-scroll" style="padding:10px 100px;">
+      <a class="navbar-brand" href="#"><img src="images/concor.png" class="img-responsive" alt=""
+          style="margin-left: -11px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="float: right;"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-auto" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto mx-auto my-auto order-0">
+          <li class="nav-item">
+            <a class="nav-link p-44 text-white" href="#">Platform </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-44 text-white" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-44 text-white" href="#">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-44  text-white" href="#">Team</a>
+          </li>
+          <!--<li class="nav-item">
+           
+             <a class="github-button nav-link" href="https://github.com/odipixel/fixr-landing/fork" data-show-count="true" aria-label="Fork odipixel/fixr-landing on GitHub">Fork</a>
+         Place this tag where you want the button to render.
+            <a class="github-button" href="https://github.com/odipixel/fixr-landing" data-show-count="true" aria-label="Star odipixel/fixr-landing on GitHub">Star</a> 
+          </li>-->
+        </ul>
+
+        <a class="nav-link text-white p-43 button" href="#">Login</a>
+        <a class="nav-link text-white p-2 active_button" href="#">Register</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class=" bg-dark">
+    <div class="jumbotron-overlay" style="overflow: hidden;">
+      <div class="container-fluid " style="padding: 0px;">
+        <div class="row m-0 p-0">
+          <div class="col-md-6 col-xs-8 main-left-col">
+            <div class="inline-photo show-on-scroll">
+              <h1 class="pb-5">Managed IT <br> <span class="tdyellow">Services</span>
+              </h1>
+              <p class="pb-5 main-desc">
+                Our senior engineers will help you assess your systems, architect a design, develop a plan and implement
+                a solution. We take a 360 degree look at your needs, zeroing in on risk areas while keeping the big
+                picture in mind
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 first-section"
+            style="margin-right: -30%;background-image: url('images/helpdesk.png');background-size: cover; margin-top: 8%;height: 93vh;margin-left: 30px;">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hover-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <img src="images/icon1.png" alt="">
+          <h4>MICROSOFT BUSINESS APPLICATION
+            IMPLEMENTATION & MIGRATION</h4>
+          <div class="bar"></div>
+          <p>Microsoft Gold Certified partner for 10 years. MCTS, MCITP, MCSE and MCSA specialist in-house with
+            extensive experience building, upgrading and servicing Windows servers on-premise and in cloud.</p>
+        </div>
+        <div class="col-4">
+          <img src="images/icon2.png" alt="">
+          <h4>NETWORK ASSESSMENTS
+            & AUDITS</h4>
+          <div class="bar"></div>
+          <p>Senior engineers are available to perform a complete network assessment of your infrastructure, including
+            asset & inventory analysis and recommendations</p>
+        </div>
+        <div class="col-4">
+          <img src="images/icon3.png" alt="">
+          <h4>DATA
+            VIRTUALIZATION</h4>
+          <div class="bar"></div>
+          <p>We help you create a private or hybrid cloud, either visualizing your physical infrastructure, replicating
+            your production environment to an off-site location, or fully managing your virtual machines in our data
+            center</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="features">
+    <div class="feature-card">
+      <img src="images/business.png" alt="">
+      <h4>Business Day</h4>
+      <p>
+        8 AM – 5 PM US TIME ZONES
+        <br>
+        Call, answer, and support services provided from our Jersey City, NJ offices
+      </p>
+    </div>
+    <div class="feature-card">
+      <img src="images/support.png" alt="">
+      <h4>24X7 Support</h4>
+      <p>
+        24×7 all you can eat buffet of full support.
+        <br>
+        US based business day support and after hours support from our NOC
+      </p>
+    </div>
+    <div class="feature-card">
+      <img src="images/speech.png" alt="">
+      <h4>Call answering</h4>
+      <p>
+        24×7 Call Answering services only.
+        <br>
+        POC will be notified when a call or request is made
+      </p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="section-clients ">
+    <div class="container">
+      <h3 class="clie inline-photo1 show-on-scroll" style="text-align:center;">CLIENTS</h3>
+
+      <div class="row">
+        <div class="col-md-12 inline-photo1 show-on-scroll">
+          <div style="text-align: center;">
+            <section class="customer-logos slider">
+              <div class="slide"><img src="images/nav1.svg"></div>
+              <div class="slide"><img src="images/nav2.svg"></div>
+              <div class="slide"><img src="images/nav3.svg"></div>
+              <div class="slide"><img src="images/nav4.svg"></div>
+              <div class="slide"><img src="images/nav5.svg"></div>
+              <div class="slide"><img src="images/nav6.svg"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row ppo">
+        <div class="col-md-6 col-xs-6 bob1 inline-photo1 show-on-scroll">
+          <img src="images/oo1.jpg" class="oo1">
+          <img src="images/oo1.jpg" class="oo1">
+
+          <h1 class="head1">Let's work<br>
+            together!</h1>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+
+
+        <div class="col-md-6 col-xs-6 bob">
+
+        </div>
+
+        <div class="col-md-3" style="margin: 0px;">
+
+        </div>
+
+
+        <div class="col-md-6 bob2 inline-photo1 show-on-scroll" style="margin-left: 0px;margin-right: 0px;">
+          <p class="oop1">Get in touch</p>
+
+          <form action="/action_page.php">
+            <div class="container">
+
+              <input type="text" placeholder="Your Name" name="email" required>
+
+
+              <input type="password" placeholder="Your Email" name="psw" required>
+
+              <textarea type="message" placeholder="Your Message" rows="6"></textarea>
+              <br> <br>
+              <div class="row" style="text-align: center;    text-align: center !important;
+  flex-direction: row;
+  justify-content: center;">
+                <a href="#" class="sp_button pt-2 inline-photo1 show-on-scroll">SUBMIT</a>
+
+              </div>
+            </div>
+
+
+          </form>
+
+        </div>
+
+
+
+        <div class="col-md-3" style="margin: 0px;">
+
+        </div>
+
+        <div class="col-md-12 inline-photo1 show-on-scroll" style="text-align: center;"><br><br><br><br><br><br>
+          <p class="popo2">&#9400; 2020 Concorudus All Right Reserved
+          </p>
+          <br>
+          <ul class="list1">
+            <li>Benefit &nbsp; &nbsp; / &nbsp; &nbsp;</li>
+            <li>Pricing &nbsp; &nbsp; / &nbsp; &nbsp;</li>
+            <li>Testimonials &nbsp; &nbsp; / &nbsp; &nbsp;</li>
+            <li>Clients</li>
+          </ul>
+        </div>
+
+        <br><br>
+      </div>
+
+      <br><br>
+
+    </div>
+
+  </section>
+
+
+
+
+  <script>
+    var scroll = window.requestAnimationFrame ||
+      // IE Fallback
+      function (callback) {
+        window.setTimeout(callback, 1000 / 60)
+      };
+    var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+    function loop() {
+
+      Array.prototype.forEach.call(elementsToShow, function (element) {
+        if (isElementInViewport(element)) {
+          element.classList.add('is-visible');
+        } else {
+          element.classList.remove('is-visible');
+        }
+      });
+
+      scroll(loop);
+    }
+
+    // Call the loop for the first time
+    loop();
+
+    // Helper function from: http://stackoverflow.com/a/7557433/274826
+    function isElementInViewport(el) {
+      // special bonus for those using jQuery
+      if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+      }
+      var rect = el.getBoundingClientRect();
+      return (
+        (rect.top <= 0 &&
+          rect.bottom >= 0) ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+        (rect.top >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+      );
+    }
+  </script>
+
+  <script>
+    function animateCSS(element, animationName, callback) {
+      const node = document.querySelector(element)
+      node.classList.add('animated', animationName)
+
+      function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+      }
+
+      node.addEventListener('animationend', handleAnimationEnd)
+    }
+
+    const s_headings = [
+      'Helpdesk Services',
+      'Managed IT Services',
+      'NOC Services'
+    ];
+
+    const s_text = [
+      'Helpdesk support is often one of the most difficult jobs in any organization; having to be the firefighter when a computer is crashing, or a user has a deadline and their presentation won’t print. By utilizing 24×7 LIVE helpdesk.',
+      'Our senior engineers will help you assess your systems, architect a design, develop a plan and implement a solution. We take a 360 degree look at your needs, zeroing in on risk areas while keeping the big picture in mind.',
+      'It’s 2 AM, do you know what your servers are up to? Let Concordus answer the call with a proven global service delivery model that supports your clients’ most critical needs. We offer around the clock support in managing your infrastructure.',
+    ];
+
+    const s_images = [
+      'images/services_1.png',
+      'images/services_2.png',
+      'images/services_3.png',
+    ]
+
+    let current = 1;
+    let current1 = 2
+    let next = 2;
+    let next1 = 3
+
+    function serviceClick(click_id) {
+      var x = document.getElementById(click_id).textContent;
+      console.log(x)
+      var i;
+      var display;
+      a = []
+      for (i = 0; i < s_headings.length; i++) {
+        if (x == s_headings[i]) {
+          display = i
+
+        } else {
+          a.push(i);
+        }
+      }
+      animateCSS('#services_heading', 'slideInLeft')
+      animateCSS('#services_text', 'slideInLeft')
+      animateCSS('#services_bg', 'slideInRight')
+      animateCSS('#services_btn', 'slideInLeft')
+      animateCSS('#services_btn1', 'slideInLeft')
+      $('#services_heading').text(s_headings[display])
+      $('#services_text').html(s_text[display])
+      $('#services_bg').css("background-image", `url(${s_images[display]})`)
+      $('#services_btn').html(s_headings[a[0]])
+      $('#services_btn1').html(s_headings[a[1]])
+      a = [];
+
+
+
+
+    }
+
+    // function serviceNextClicked(clicked_id) {
+    //   if(clicked_id=='services_btn')
+    //   {      
+    //     current=(current)%3
+    //     next = (current + 1) % 3;
+    //     //current=(current+1)%3
+    //   next1=(current +2)%3
+    //   animateCSS('#services_heading', 'slideInLeft')
+    //   animateCSS('#services_text', 'slideInLeft')
+    //   animateCSS('#services_bg', 'slideInRight')
+    //   animateCSS('#services_btn', 'slideInLeft')
+    //   animateCSS('#services_btn1', 'slideInLeft')
+
+    //   $('#services_heading').text(s_headings[current])
+    //   $('#services_text').html(s_text[current])
+    //   $('#services_bg').css("background-image", `url(${s_images[current]})`)
+    //   $('#services_btn').html(s_headings[next])
+    //   $('#services_btn1').html(s_headings[next1])
+
+
+    //   current = (current + 1) % 3;}
+    //   if(clicked_id=='services_btn1'){
+    //     next = (current ) % 3;
+    //   next1=(current +2)%3
+    //   current = (current +1) % 3;
+    //   animateCSS('#services_heading', 'slideInLeft')
+    //   animateCSS('#services_text', 'slideInLeft')
+    //   animateCSS('#services_bg', 'slideInRight')
+    //   animateCSS('#services_btn', 'slideInLeft')
+    //   animateCSS('#services_btn1', 'slideInLeft')
+
+    //   $('#services_heading').text(s_headings[current])
+    //   $('#services_text').html(s_text[current])
+    //   $('#services_bg').css("background-image", `url(${s_images[current]})`)
+    //   $('#services_btn').html(s_headings[next])
+    //   $('#services_btn1').html(s_headings[next1])
+
+
+
+    //   }
+    // }
+
+    // function serviceNext1Clicked() {
+    //   next = (current + 1) % 3;
+    //   next1=(current +2)%3
+    //   current = (current +1) % 3;
+    //   animateCSS('#services_heading', 'slideInLeft')
+    //   animateCSS('#services_text', 'slideInLeft')
+    //   animateCSS('#services_bg', 'slideInRight')
+    //   animateCSS('#services_btn', 'slideInLeft')
+    //   animateCSS('#services_btn1', 'slideInLeft')
+
+    //   $('#services_heading').text(s_headings[current])
+    //   $('#services_text').html(s_text[current])
+    //   $('#services_bg').css("background-image", `url(${s_images[current]})`)
+    //   $('#services_btn').html(s_headings[next])
+    //   $('#services_btn1').html(s_headings[next1])
+
+
+    // }
+
+
+    // function myFunction1() {
+
+    //   document.getElementById("myDIV1").style.display = "block";
+
+    //   document.getElementById("myDIV2").style.display = "none";
+
+    //   document.getElementById("myDIV3").style.display = "none";
+
+    //   document.getElementById("id1").style.display = "none";
+
+    //   document.getElementById("id2").style.display = "block";
+
+    //   document.getElementById("id3").style.display = "none";
+
+
+    // }
+
+    // function myFunction2() {
+
+    //   document.getElementById("myDIV1").style.display = "none";
+
+    //   document.getElementById("myDIV2").style.display = "block";
+
+    //   document.getElementById("myDIV3").style.display = "none";
+
+    //   document.getElementById("id1").style.display = "none";
+
+    //   document.getElementById("id2").style.display = "none";
+
+    //   document.getElementById("id3").style.display = "block";
+
+
+    // }
+
+    // function myFunction3() {
+
+    //   document.getElementById("myDIV1").style.display = "none";
+
+    //   document.getElementById("myDIV2").style.display = "none";
+
+    //   document.getElementById("myDIV2").style.display = "none";
+
+    //   document.getElementById("myDIV3").style.display = "block";
+
+    //   document.getElementById("id1").style.display = "block";
+
+    //   document.getElementById("id2").style.display = "none";
+
+    //   document.getElementById("id3").style.display = "none";
+
+    // }
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
+    });
+  </script>
+</body>
+
+</html>
