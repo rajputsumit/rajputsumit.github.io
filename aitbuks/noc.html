@@ -279,6 +279,18 @@
     .section-clients {
       background: none;
     }
+
+    @media screen and (max-width: 600px) {
+      .main-left-col>div {
+        text-align: center;
+        padding: 1em;
+        padding-top: 5em;
+      }
+
+      .main-desc {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -286,7 +298,7 @@
 
   <!-- navbar starts -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-masthead">
-    <div class="container-fluid inline-photo1 show-on-scroll" style="padding:10px 100px;">
+    <div class="container-fluid inline-photo1 show-on-scroll">
       <a class="navbar-brand" href="#"><img src="images/concor.png" class="img-responsive" alt=""
           style="margin-left: -11px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
