@@ -94,8 +94,9 @@
     .team-cards {
       display: flex;
       margin-top: 100px;
-      justify-content: space-around;
-      align-items: stretch;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
     }
 
     .team-card {
@@ -108,27 +109,24 @@
       font-size: 18px;
       width: 33.33%;
       transition: all .2s ease;
-      height: max-content;
+      height: 450px;
+    }
+
+    .team-card:hover {
+      height: 500px;
     }
 
     .team-card a {
       color: #031D5B;
     }
 
-    .profile-pic {
-      height: 100%;
-      width: 90%;
-      margin: 1em auto;
-    }
-
-    /* 
     .team-card img:first-child {
       width: 100%;
       height: 140px;
       margin-top: -70px;
       object-fit: contain;
       margin-bottom: 32px;
-    } */
+    }
 
     .team-card .icon img {
       margin-top: 8px;
@@ -191,28 +189,6 @@
     .bob1 {
       padding: 60px 90px 0px 140px;
     }
-
-    .card {
-      border: 1px solid lightgrey;
-      padding: 2em;
-      margin: 2em;
-    }
-
-    @media (max-width: 600px) {
-      .leadership {
-        padding: 0;
-      }
-
-      .main-left-col>div {
-        padding: 2em;
-        padding-top: 5em;
-        text-align: center;
-      }
-
-      .main-left-col p {
-        line-height: 2;
-      }
-    }
   </style>
 </head>
 
@@ -220,7 +196,7 @@
 
   <!-- navbar starts -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-masthead">
-    <div class="container-fluid inline-photo1 show-on-scroll">
+    <div class="container-fluid inline-photo1 show-on-scroll" style="padding:10px 100px;">
       <a class="navbar-brand" href="#"><img src="images/concor.png" class="img-responsive" alt=""
           style="margin-left: -11px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -256,7 +232,7 @@
     </div>
   </nav>
 
-  <div class="bg-dark">
+  <div class=" bg-dark">
     <div class="jumbotron-overlay" style="overflow: hidden;">
       <div class="container-fluid " style="padding: 0px;">
         <div class="row m-0 p-0">
@@ -323,9 +299,9 @@
             <br>
             Team
           </h1>
-          <div class="team-cards row">
-            <div class="card col-xs col-sm col-md col-lg">
-              <img src="images/avatar.png" alt="" class="profile-pic" />
+          <div class="team-cards">
+            <div class="team-card">
+              <img src="images/avatar.png" alt="" />
               <p class="desc">
                 Neeraj has held various IT Leadership positions during his 22 years’ experience and is currently the
                 CEO/CTO at Concordus Applications, Inc. Neeraj also serves as the Co-Chairman of CompTIA's Blockchain
@@ -337,8 +313,8 @@
                 <img src="images/linkedin.png" alt="linkedin" />
               </a>
             </div>
-            <div class="card col-xs col-sm col-md col-lg">
-              <img src="images/avatar2.png" alt="" class="profile-pic" />
+            <div class="team-card">
+              <img src="images/avatar2.png" alt="" />
               <p class="desc">
                 Jeffery has over 30 years of telecom and technology industries experience covering telecom master
                 agency, and software development/integration. He has spent the vast majority of his career focused on
@@ -350,8 +326,8 @@
                 <img src="images/linkedin.png" alt="linkedin" />
               </a>
             </div>
-            <div class="card col-xs col-sm col-md col-lg">
-              <img src="images/avatar3.png" alt="" class="profile-pic" />
+            <div class="team-card">
+              <img src="images/avatar3.png" alt="" />
               <p class="desc">
                 Daniel is a Channel veteran with an in-depth understanding of how the various entities operate in the
                 Channel. Daniel has this rare skill of being able to provide optimized solutions to Organizations that
