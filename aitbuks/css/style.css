@@ -73,10 +73,6 @@
   transform: rotateZ(0deg);
 }
 
-body {
-  /*font-family: Rubik;*/
-}
-
 /* Menu */
 .bg-dark {
   background-color: #2f3a5b !important;
@@ -431,10 +427,6 @@ nav {
 .div03 img,
 .div01 img {
   margin-top: 60px;
-}
-
-.div02 img,
-.div04 img {
 }
 
 .div04 {
